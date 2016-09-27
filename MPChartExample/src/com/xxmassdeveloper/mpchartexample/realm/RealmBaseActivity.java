@@ -36,8 +36,7 @@ public abstract class RealmBaseActivity extends DemoBase {
         mTf = Typeface.createFromAsset(getAssets(), "OpenSans-Regular.ttf");
 
         // no description text
-        chart.setDescription("");
-        chart.setNoDataTextDescription("You need to provide data for the chart.");
+        chart.getDescription().setEnabled(false);
 
         // enable touch gestures
         chart.setTouchEnabled(true);
